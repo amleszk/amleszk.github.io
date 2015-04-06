@@ -1,17 +1,802 @@
----
-layout: default
----
 
-{% assign index = true %}
-{% for post in paginator.posts %}
-{% assign content = post.content %}
-    <article class="post">{% include article.html %}</article>
-{% endfor %}
-<nav id="pagenavi">
-    {% if paginator.previous_page %}
-        <a href="{{paginator.previous_page}}" class="prev">Previous</a>
-    {% endif %}
-    {% if paginator.next_page %}
-        <a href="{{paginator.next_page}}" class="next">Next</a>
-    {% endif %}
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<title>  | Alistair Leszkiewicz</title>
+
+	<meta name="author" content="amleszk">
+
+<meta name="description" content="This the first &lsquo;Mobile forum&rsquo; event I&rsquo;ve seen in New york. Invite only and held at the facebook office at Astor place. The format &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Alistair Leszkiewicz" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><img src="/images/avatar.jpg">
+<h1><a href="/">Alistair Leszkiewicz</a></h1>
+<span class="tagline"></span>
+<nav id="main-nav"><ul>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="http://twitter.com/amleszk">Twitter</a></li>
+	<li><a href="http://instagram.com/amleszk">Instagram</a></li>	
+	<li><a href="/archives">Archives</a></li>
+</ul>
 </nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="http://twitter.com/amleszk">Twitter</a></li>
+	<li><a href="http://instagram.com/amleszk">Instagram</a></li>	
+	<li><a href="/archives">Archives</a></li>
+</ul>
+</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner">
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2014/11/01/new-york-mobile-forum/">
+			
+				New York Mobile Forum (30 Nov 2014)</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-11-01T19:27:00-04:00" pubdate data-updated="true">Nov 1<span>st</span>, 2014</time></div>
+	</header>
+	<div class="entry-content">
+		<p>This the first &lsquo;Mobile forum&rsquo; event I&rsquo;ve seen in New york. Invite only and held at the facebook office at Astor place. The format was based around small groups brainstorming and open discussion; then group facilitators would present key points to all attendees. I made a lot of notes, but chose the top 5 take aways I had.</p>
+
+<h4>You should be using <a href="https://slack.com/">Slack</a></h4>
+
+<p>for internal communications I heard Slack recommended throughout discussion. Especially its search functions. I actually haven&rsquo;t had the chance to use it, but am now very keen.</p>
+
+<h4>Train web developers into native.</h4>
+
+<p>Mobile teams need more developers than the market can handle, and web is becoming a secondary platform to native. Etsy spoke about having dedicated roles for training into the native space. Identify developers who are keen to make the transition and give them full support.</p>
+
+<h4>Build a testing culture, but tread lightly</h4>
+
+<p>The tools are still in infacy to support native TDD. Culture spawned from the web world (where testing is simpler) have transitoned and can adversely impact delivery if taken at full speed.</p>
+
+<h4>Modularize with respect to overheads</h4>
+
+<p>Modular code is a given, but splitting your app into libraries takes an extra level of foresight. The tools are not great, and you will incur overhead costs, but some time in the future you will need to draw a line in the sand and split your architecture out.</p>
+
+<h4>force yourself to have 1-on-1&rsquo;s</h4>
+
+<p>Giving and receiving feedback is not natural, but without it teams and the individuals within cannot grow. The 1-on-1 gives a unique opportunity to get a certain level of honesty and feelings out in the open. Especially important in remote teams, but I would reccommend regular 1-on-1&rsquo;s in all dev teams.</p>
+
+<h3>The format</h3>
+
+<p>Really liked the peer-to-peer discussions. I was seeing conversations about exact problems I&rsquo;d faced and insights into others unique solutions. I&rsquo;d like to see some more controversial, &lsquo;out of the box&rsquo; topics next time. And maybe splitting platform specific discussions to their respective audience (I was not too interested in Android JVM issues presentation).</p>
+
+<p><img src="http://i.imgur.com/GIzm6Iu.jpg" alt="" /></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2014/10/29/building-a-team/">
+			
+				Building a Team</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-29T23:56:00-04:00" pubdate data-updated="true">Oct 29<span>th</span>, 2014</time></div>
+	</header>
+	<div class="entry-content">
+		<ul>
+<li><p>Imposter syndrome when performing interviews &ndash; predefined code tests, tailor the interview to yourself</p></li>
+<li><p>Giving feedback is unnatural, but you owe it to new employees to be continually giving feeback</p></li>
+<li>Give people a shot at management before officially changing their role, be clear that a persons contribution is</li>
+<li>Are people you inter signing up for an expereince or acheiving a goal? are they interviewing elsewhere that</li>
+<li>You&rsquo;re not going to siginificantly alter the trajectory of a big company</li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2014/10/29/startup-class-building-a-team/">
+			
+				Startup Class - Building a Team</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-29T11:45:00-04:00" pubdate data-updated="true">Oct 29<span>th</span>, 2014</time></div>
+	</header>
+	<div class="entry-content">
+		<ul>
+<li><p>Imposter syndrome when performing interviews &ndash; predefined code tests, tailor the interview to yourself not what you&rsquo;ve read on the internet</p></li>
+<li><p>Giving feedback is unnatural, but you owe it to new employees to be continually giving feeback</p></li>
+<li>Give people a shot at management before officially changing their role, be clear that a persons contribution is</li>
+<li>Are people you inter signing up for an expereince or acheiving a goal? are they interviewing elsewhere that</li>
+<li>You&rsquo;re not going to siginificantly alter the trajectory of a big company</li>
+</ul>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2014/10/26/interview-coding/">
+			
+				Interview Coding</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-10-26T14:24:00-04:00" pubdate data-updated="true">Oct 26<span>th</span>, 2014</time></div>
+	</header>
+	<div class="entry-content">
+		<p>I have a mixed reaction to code questions, when not used carefully they have the ability to taint the interview process. In a regular setting no one writes code under the time contraints and stress levels that are present in technical interviews. But it makes sense to ask a candidate, who is interviewing for a programming position, to actually write some code and produce a solution to a problem. The issue is with the overly complex questions, if you ask the candidate a bad code question it can be very off-putting.</p>
+
+<p>Code questions are a fact of tech interviewing,  so I am going to do some analysis of a few to determine if they are good questions to ask</p>
+
+<h2>Case 1: Algorithm design</h2>
+
+<p><strong>Question:</strong> Given 2 words, write a function that determines if the words are anagrams of eachother</p>
+
+<p>If you&rsquo;ve never seen this question before, I think the answer can be difficult to visualize, and a candidate who is under pressure may struggle. How the question is presented makes a surprising amount of difference, what is the essence of an anagram? It&rsquo;s a word in the english language, a string of characters that &ndash; when rearranged &ndash; corresponds to another word.</p>
+
+<p>So the same question re-worded:</p>
+
+<p><strong>Real Question:</strong> Given 2 strings, write a function that determines if all characters are in both strings.</p>
+
+<h3>Some answers from stackoverflow:</h3>
+
+<ul>
+<li><a href="http://stackoverflow.com/a/15045791/782808">Sort both words by characters and string compare</a></li>
+<li><a href="http://stackoverflow.com/a/15045892/782808">Map each letter to a hash, keep counts, compare counts</a></li>
+<li><a href="http://stackoverflow.com/a/17004897/782808">Map each letter to a prime number and sum the results</a></li>
+</ul>
+
+
+<p>The most common answer would be to iterate through the first string, searching for characters in the second string, while keeping track of duplicates. Sorting both strings is a shortcut to this process.</p>
+
+<h3>Takeaways</h3>
+
+<p>Rewording the question to reduce cruft should be your first step. The strings being anagrams is <strong>completely irrelevant</strong>. You are being asked to find the intersection of 2 sets of characters. The interviewer did not pose the question this way because ability to reduce cruft is what is being tested.</p>
+
+<h2>Case 2: Code design</h2>
+
+<p>An alternative to writing an algorithm is the code design question. Take the following example:</p>
+
+<p><strong>Question:</strong> Elevators have a relatively simple control mechanism, the user calls an elevator using a button <code>UP</code> or <code>DOWN</code>. Design an elevator control system using object oriented paradigms.</p>
+
+<p>The objective of this is to talk about an MVC approach to designing. A good answer should model <code>Elevator</code> class with getters/setters:</p>
+
+<ul>
+<li><code>-(int) currentFloor</code></li>
+<li><code>-(int) destinationFloor</code></li>
+<li><code>-(void) setDestinationFloor:(NSInteger)destinationFloor</code></li>
+</ul>
+
+
+<p>and <code>Button</code> class:</p>
+
+<ul>
+<li><code>-(int) floor</code></li>
+<li><code>-(Direction) callDirection</code></li>
+<li><code>-(void) setCallDirection:(NSInteger)callDirection</code>
+
+<ul>
+<li><code>-(void) clearCall</code></li>
+</ul>
+</li>
+<li><p>and <code>ElevatorController</code> class:</p></li>
+</ul>
+
+
+<p><code>public</code></p>
+
+<ul>
+<li><code>-(Elevator *) callAvailableElevatorFromFloor:(NSInteger)floor direction:(Direction)direction</code></li>
+</ul>
+
+
+<p><code>private</code></p>
+
+<ul>
+<li><code>@property NSArray *calledButtons</code> &ndash; Of type <code>Button</code></li>
+<li><code>@property NSArray *elevators</code> &ndash; Of type <code>Elevator</code></li>
+</ul>
+
+
+<p>some followup questions:</p>
+
+<ul>
+<li>Describe the process of calling an elevator and getting to the destination floor</li>
+<li>How would you handle a button call of <code>UP</code> and <code>DOWN</code> from the same floor?</li>
+</ul>
+
+
+<p>This has more of a natural feel to it than the algorithm question, it&rsquo;s is a problem programmers would actually face regularly. Athough this question feels easy initially, we could extend the idea to a chess game, or a 4 player card game.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2014/08/16/core-data/">
+			
+				Core Data</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-08-16T17:56:00-04:00" pubdate data-updated="true">Aug 16<span>th</span>, 2014</time></div>
+	</header>
+	<div class="entry-content">
+		<p>If you’re an iOS developer you probably use <a href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.htmlhttps://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CoreData/cdProgrammingGuide.html">Core data</a> every day. I have been learning Core data for the last year professionally, and in my spare time for use in my own apps. I thought I would post some tips that maybe helpful in getting your head around this useful but difficult Apple framework.</p>
+
+<h3>Entities and Context</h3>
+
+<p>The <code>NSManagedObjectContext</code> is one of the most important classes to understand. Apple calls this the <em>scratch pad</em>, another way to think of it is the reference to the your entities <strong>world</strong></p>
+
+<p>The general definition of a World is:</p>
+
+<ul>
+<li>a group of living things.</li>
+<li>a period of history.</li>
+<li>all of the people, societies, and institutions on the earth.</li>
+</ul>
+
+
+<p>When first learning Core Data the context can be annoying, why cant I can just make changes to objects and make them stick? But if you think if it in terms of the world in which things happen, it makes more sense.</p>
+
+<p>Every data change event that happens must be tied to a context, and context’s can never be traversed (although they can be merged). The <code>NSManagedObjectContext</code> is your world according to core data and you should structure your code to always have access to it and make changes in reference to it.</p>
+
+<p>Continuing on with the analogy, a living thing is your <code>NSManagedObject</code>. In the context of its world, changes can happen to the living objects, they can be created and deleted. The world itself can even be deleted, which is handy for discarding edits.</p>
+
+<h3>Threading</h3>
+
+<p>Introducing threading can dramatically change the structure of your application without a safetey net, so extra caution should be taken. Debugging often becomes more difficult also. In core data the <code>NSManagedObjectContext</code> can be tied to the main thread, or any thread during creation. If tied to the main thread your operations have the potention to cause app to freeze while in progress. In that case we need to explore threading.</p>
+
+<p>Core data provides the method <code>- (void)performBlock:(void (^)())block</code> on <code>NSManagedObjectContext</code> <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/CoreDataFramework/Classes/NSManagedObjectContext_Class/index.html#//apple_ref/occ/instm/NSManagedObjectContext/performBlock:">as a compact wrapper</a> around operations that can be performed on any thread. But the simplicity of this method is deceiving.</p>
+
+<h4>Threaded notifications</h4>
+
+<p>If you watch <code>NSNotifications</code> from <code>NSManagedObjectContext</code> <a href="https://developer.apple.com/library/ios/documentation/cocoa/reference/CoreDataFramework/Classes/NSManagedObjectContext_Class/index.html#//apple_ref/c/data/NSManagedObjectContextObjectsDidChangeNotification">for changes in data</a>, you now have to be aware of the thread they are received on. Code that makes changes to your UI such as <code>UIKit</code> must be on the main thread. If you make changes in core data background threads these notifications can appear from those threads and cause <code>UIKit</code> ti crash that are almost impossible to trace back.</p>
+
+<p>I have shipped code which actually made this mistake, <a href="https://gist.github.com/amleszk/7f93e55e5cbbf41ec9fb">so have built in protection against it</a></p>
+
+<p>Use child/parent <code>NSManagedObjectContext</code> to make your changes and submit them back to a parent which you know is tied to the main thread. More on this <a href="https://www.google.com/search?q=NSPrivateQueueConcurrencyType">NSPrivateQueueConcurrencyType</a></p>
+
+<h4>Thread contention &amp; atomic operations</h4>
+
+<p>You should confine all core data <code>performBlock</code>&rsquo;s to the one serial <code>NSOperationQueue</code> for safety.</p>
+
+<p>When a <code>performBlock</code> makes changes to data, there&rsquo;s no guaratee another <code>performBlock</code> is not performing changes on a different thread at approximately the same time. When this happens you run the risk of core data returning errors that make no sense. Enqueueing core data operations into a serial <code>NSOperationQueue</code> will guard against this. I&rsquo;ve added a short <a href="https://gist.github.com/amleszk/d80f06729a639a8b0672">gist</a> to show an example</p>
+
+<h3>Migrations</h3>
+
+<p><a href="http://www.objc.io/issue-4/core-data-migration.html">Objc.io has a nice writeup on the subject</a>. After skimming through it you may come to this conclusion which I strongly recommend: <strong>Avoid non light-weight migrations</strong>.</p>
+
+<p>This is totally possible if you are a bit creative, and its worth the extra effort. These are my reccommendations:</p>
+
+<h5>If a properties data type changes, create a new property instead of modifying the existing one</h5>
+
+<p>Changing the datatype will not allow light-weight migrations to happen. This is because CoreData doesn&rsquo;t know how to modify the existing data to conform to the new datatype. If you create a new property and delete the old one, If you care about keeping the old data you have no choice but to venture into manual migration territory.</p>
+
+<h5>Use 2 managed object models</h5>
+
+<p>If you have data that you need to keep persistent accross app deployments then it maybe worth keep that in a different datamodel (or outside Core Data). One where migrations are <em>important</em>. Data that is purely an offline cache can be kept separate where migrations are not even considered, the data is killed each new app update.</p>
+
+<h3>Use magical record for the right reasons</h3>
+
+<p><a href="https://github.com/magicalpanda/MagicalRecord">Magical record</a> is an abstraction layer ontop of Core Data. I use it for my own apps, but still know how to drop down to the level of pure Core Data. There&rsquo;s many resources for learning more, <a href="https://www.google.com/webhp?q=core%20data%20apple#q=core+data+apple">Apple has an write up of its own</a> which maybe a good place to start</p>
+
+<h3>Core Data is worth the headaches</h3>
+
+<p>I think its a given that every iOS dev wrestles with Core Data during the course of their career, but as a persistence layer it does a pretty great job of managing many of needs of modern iOS apps.</p>
+
+<p><img src="http://i.imgur.com/c2NSmV2.png" alt="Pretty good" /></p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2014/05/03/no-title/">
+			
+				Girl Develop-it</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-05-03T13:39:00-04:00" pubdate data-updated="true">May 3<span>rd</span>, 2014</time></div>
+	</header>
+	<div class="entry-content">
+		<p>This week I helped with and iOS programming class for <a href="http://www.meetup.com/girldevelopit/">Girl developit meetup</a>, hosted by <a href="https://twitter.com/jmburges">Joe Burgess</a>. The format was little to no pre-requisite programming skill, so the students were writing their first for loops and if statements.</p>
+
+<p>Objective-C is a difficult first programming language, so one thing Joe said in the class stuck with me, that was:</p>
+
+<blockquote><p>it&rsquo;s not that anyone is smarter than you are, it&rsquo;s just they&rsquo;ve been doing it longer.</p></blockquote>
+
+<p>He said this a couple of times throughout the lesson and the exercises. I think its a great thing to ground yourself. When something seems un-attainable to grasp in your understanding, it just takes additional time.</p>
+
+<p>Many problems in code come down to your mental model not fitting to whats happening. So you need to debug the code, and adjust your understanding. For that breif period you feel stupid, but it also can be a fun challenge. That is coding.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2014/02/22/xcode-shortcuts/">
+			
+				Xcode Shortcuts</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2014-02-22T11:09:00-05:00" pubdate data-updated="true">Feb 22<span>nd</span>, 2014</time></div>
+	</header>
+	<div class="entry-content">
+		<p><code>Ctrl</code> + <code>Cmd</code> + <code>J</code> Jump to definition (under the cursor)</p>
+
+<p><code>Ctrl</code> + <code>1</code> Show related items, from here you can select super classes or recent files</p>
+
+<p><img src="/images/posts/xcode-shortcut-1.png" alt="shortcut 2" /></p>
+
+<p><code>Ctrl</code> + <code>6</code> Show document items (methods outlines). Start typing to filter</p>
+
+<p><img src="/images/posts/xcode-shortcut-2.png" alt="shortcut 2" /></p>
+
+<p><code>Ctrl</code> + <code>a</code> Move cursor to start of line
+<code>Ctrl</code> + <code>e</code> Move cursor to end of line</p>
+
+<p>Some more well known:</p>
+
+<p><code>Cmd</code> + <code>Shift</code> + <code>j</code> Highlight current file in group folder view</p>
+
+<p><code>Cmd</code> + <code>Shift</code> + <code>o</code> Open quickly</p>
+
+<p><code>Ctrl</code> + <code>Cmd</code> + <code>←</code> Navigate back a file</p>
+
+<p><code>Ctrl</code> + <code>Cmd</code> + <code>→</code> Navigate forward a file</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2013/10/19/unit-testing-block-based-callbacks/">
+			
+				Unit Testing Block Based Callbacks</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-10-19T20:11:00-04:00" pubdate data-updated="true">Oct 19<span>th</span>, 2013</time></div>
+	</header>
+	<div class="entry-content">
+		<p>I recently tackled unit testing my AFNetworking client classes, which use block based callbacks, stubbing out block callbacks took some trial and error so is worth of a blogpost.</p>
+
+<p>Take the example method:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>- (AFHTTPRequestOperation*)meWithSuccess:(void (^)(AFHTTPRequestOperation *operation, NSDictionary *responseObject))success
+</span><span class='line'>                                 failure:(void (^)(AFHTTPRequestOperation *operation, NSError *error))failure
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>How would you go about mocking/stubbing this method call? One way is to use <a href="http://ocmock.org/">OCMock expectations</a>. In your unit test setUp:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>self.stubMessagesPayload = @{
+</span><span class='line'>     @"has_mail" : @0,
+</span><span class='line'>     @"has_mod_mail" : @0,
+</span><span class='line'>};
+</span><span class='line'>
+</span><span class='line'>_client = [OCMockObject mockForClass:[AFRedditAPIClient class]];
+</span><span class='line'>
+</span><span class='line'>[[[_client expect] andDo:^(NSInvocation *invocation) {
+</span><span class='line'>    void (^__unsafe_unretained successStub)(AFHTTPRequestOperation *, NSDictionary *);
+</span><span class='line'>    [invocation getArgument:(&successStub) atIndex:2];
+</span><span class='line'>    
+</span><span class='line'>    successStub(nil,self.stubMessagesPayload);
+</span><span class='line'>}] meWithSuccess:[OCMArg any] failure:[OCMArg any]];    
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>In the actual test, you can change the value of <code>stubMessagesPayload</code> and assert different behaviour. You&rsquo;ll also notice the block argument is located at index 2, <a href="https://developer.apple.com/library/mac/documentation/cocoa/reference/foundation/classes/NSInvocation_Class/Reference/Reference.html#//apple_ref/occ/instm/NSInvocation/getArgument:atIndex:">from the documentation</a>:</p>
+
+<p><code>Indices 0 and 1 indicate the hidden arguments self and _cmd, respectively; these values can be retrieved directly with the target and selector methods. Use indices 2 and greater for the arguments normally passed in a message.</code></p>
+
+<p>The other issue you may face is how to get your class to actually use the mocked version of your object. The code under test may look like this:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[[AFRedditAPIClient sharedClient] meWithSuccess:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+</span><span class='line'>NSLog(@"success");
+</span><span class='line'>} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+</span><span class='line'>NSLog(@"failure");
+</span><span class='line'>}];
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>The only way to stub a class method is via swizzling, which can get messy. The alternative is dependency injection, whereby you expose object dependencies using properties or constructor varaibles. Then they can be swapped more easily at runtime, so if the <code>AFRedditAPIClient</code> object where a public property, and <code>RCMessageClient</code> were the class i wanted to test, expose the dependency using a property and in the test asign it to the mock object:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>_apiClient = [OCMockObject mockForClass:[AFRedditAPIClient class]];
+</span><span class='line'>_messageClient = [[RCMessageClient alloc] init];
+</span><span class='line'>_messageClient.apiClient = _apiClient
+</span><span class='line'>...
+</span><span class='line'>Additional stubs explained above
+</span><span class='line'>...</span></code></pre></td></tr></table></div></figure>
+
+
+<p>And the implementation changes to refer to that property instead of the class method:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[_apiClient meWithSuccess:^(AFHTTPRequestOperation *operation, NSDictionary *responseObject) {
+</span><span class='line'>NSLog(@"success");
+</span><span class='line'>} failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+</span><span class='line'>NSLog(@"failure");
+</span><span class='line'>}];
+</span></code></pre></td></tr></table></div></figure>
+
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2013/09/05/e3-visa-expedition/">
+			
+				E3 Visa Expedition</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-05T18:46:00-04:00" pubdate data-updated="true">Sep 5<span>th</span>, 2013</time></div>
+	</header>
+	<div class="entry-content">
+		<p>This post is about a recent US tour I took with the goal of finding work as an iOS Developer in New York.
+In March of this year I made the decision to quit my job and take the plunge. I was solo, and planned accommodation only 1-2 weeks in advance, so had a huge amount of flexibility.</p>
+
+<p>Another factor for the timing was the <a href="https://developer.apple.com/wwdc/">WWDC</a> conference. I didn&rsquo;t get a ticket the amount of side events and <a href="http://altwwdc.com">altWWDC</a> made it more than worth it.</p>
+
+<p>I was there for 4 months, did a lot of of sight seeing also, but we&rsquo;ll skip over that.</p>
+
+<h3><strong>Getting around</strong></h3>
+
+<p>I was &lsquo;on the cheap&rsquo; so flew Jetstar <em>Melbourne > Honolulu</em> ($700) then <em>Honolulu > Vancouver</em> ($220). Once on the mainland the <a href="http://megabus.com">Megabus</a> and <a href="http://greyhound.com">Greyhound</a> were the preferred mode of transport. Both cheap and allow for great flexibility, the clientele can be pretty rough though.</p>
+
+<h3><strong>Looking online</strong></h3>
+
+<p>I stayed away from traditional job seek sites, the amount of recruiter spam seemed massive (cybercoders??). Resources:</p>
+
+<ul>
+<li>Hackernews : <a href="http://hnhiring.com">http://hnhiring.com</a></li>
+<li>Hackernews alt : <a href="http://curatedhnhiring.com/">http://curatedhnhiring.com/</a></li>
+<li><a href="http://getuncubed.com">Uncubed (NYC only)</a></li>
+<li><a href="http://mappedinny.com/">Made in NY (NYC only)</a></li>
+<li><a href="http://careers.stackoverflow.com">Stackoverflow</a></li>
+<li><a href="http://jobs.37signals.com">37 Signals</a></li>
+<li><a href="https://jobs.github.com/">Github</a></li>
+<li><a href="https://angel.co">Angel list</a></li>
+<li><a href="http://www.garysguide.com/jobs">Garysguide</a></li>
+<li><a href="http://nycstartupjobfair.com/startup-list/">NYC Startup job fair</a></li>
+</ul>
+
+
+<h3><strong>Events / Meetups</strong></h3>
+
+<p>Every city hosts tech meetups and networking events, some resources for meetups:</p>
+
+<ul>
+<li><a href="http://meetup.com">Meetup</a></li>
+<li><a href="http://www.garysguide.com/events">Garysguide</a></li>
+<li><a href="http://cocoaheads.org/">Cocoaheads</a></li>
+<li><a href="http://www.eventbrite.com/">Eventbright</a></li>
+</ul>
+
+
+<h3><strong>Interviews</strong></h3>
+
+<p>I had about 20 interviews before landing a position, split 50/50 between phone and face to face. Numerous companies  follow the Google approach of</p>
+
+<ul>
+<li>1 or 2 phone screens</li>
+<li>3-5 interviews in one day, each interview with one person.</li>
+</ul>
+
+
+<p>Each interview was one or two coding questions and some general resume interogation. Having a portfolio of public facing apps is expected, if not then some open source projects.</p>
+
+<h3><strong>Code questions</strong></h3>
+
+<p>I found the following process to be helpful for programming questions, taken from:
+<a href="http://www.amazon.com/Programming-Problems-Primer-Technical-Interview/dp/1475071965"><em>Programming problems : A Primer for the technical interview</em> by B. Green.</a> A summary:</p>
+
+<p><strong>1. Reframe:</strong> say the problem back to the interviewer, allowing ambiguities to be addressed. And a way to get hints</p>
+
+<p><strong>2. Write test cases:</strong> Builds upon step 1, confirms you and your interviewer are on the same page, will help you formulate your solution. Truth tables, expected output for input, corner cases. write them all down without writing the solution</p>
+
+<p><strong>3. Diagram a solution:<a href="/images/posts/owl.jpg">(e.g)</a>:</strong> There&rsquo;s not many general purpose helpers here, hopefully you will have an idea of how to approach the problem based on the test cases and your discussions with the interviewer. Think out loud, they will provide hints if you are stuck.</p>
+
+<p><strong>4. Coding </strong>: I like to start start high level and invent lower level functions, keep variable/function names short as possible.</p>
+
+<p><strong>5. Run the test cases from #2</strong>: Confirms your solution and allows interviewer to critque</p>
+
+<p><strong>See also:</strong> &ndash; <a href="http://peterschaadt.com/blog/2013/03/30/interviewing-the-interviewer/">Interviewing the Interviewer</a>
+&ndash; <a href="http://www.youtube.com/watch?v=oWbUtlUhwa8&amp;feature=youtu.be">Candidate Coaching Session</a></p>
+
+<h3><strong>E3 Visa</strong></h3>
+
+<h4><strong>Documents</strong></h4>
+
+<p>The formulation of documents for my visa was handled by <a href="http://visanow.com">visanow</a>. The process took abou 3 weeks but was pretty straight forward, they have a checklist style interface and good customer service.</p>
+
+<p><img src="/images/posts/visanow-e3.png" alt="visa list" /></p>
+
+<h4><strong>Interview</strong></h4>
+
+<p>Held at St. kilda road Melbourne, I had booked for 9:30, arrived at 9 and waited until 10:30 to be seen. There&rsquo;s an airport style security check where you&rsquo;ll relinquish any devices.</p>
+
+<p>I bought everything listed from visanow along with some bank statements, bring everything you think will help, but don&rsquo;t forget:</p>
+
+<ul>
+<li>Printed copy of interview confirmation page</li>
+<li>DS 160 confirmation page</li>
+<li>Letter of endorsement from your employer</li>
+<li>Labour condition agreement (ETA form 9035 &amp; 9035E)</li>
+<li>DHS Form G28</li>
+</ul>
+
+
+<h3><strong>Done!</strong></h3>
+
+<p>Almost hard to belive once it happens, the pipe dream is a reality. My role as iOS Developer at <a href="http://meetup.com">Meetup</a> starts in a few weeks, one adventure ends and another is beginning. Thanks for reading.</p>
+
+		
+		
+	</div>
+
+</article>
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2013/04/08/htmpple-nsattributedstring-uiwebview-rendering/">
+			
+				Fast HTML Rendering Without UIWebView</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-08T22:14:00-04:00" pubdate data-updated="true">Apr 8<span>th</span>, 2013</time></div>
+	</header>
+	<div class="entry-content">
+		<p>This project was created for <a href="https://itunes.apple.com/au/app/amrc-reddit-client/id572391252?mt=8">amrc</a> as a means of rendering HTML rich text content.</p>
+
+<p>The library is built on xml parser <a href="https://github.com/topfunky/hpple">hpple</a>. <code>htmpple</code> uses NSDictionary merging to produce an <code>NSAttributedString</code> that represents the given html. Only a subset of html tags are supported, they include those available to any rich text editor, layout such as <code>table</code> is too complex to render with just <code>NSAttributedString</code>.</p>
+
+<p>Rendering non-hyperlink content is a peice of cake in iOS 6 due to the support added to <code>[UILabel attributedString]</code> . If the HTML contains links there&rsquo;s a bit of additional hacking required. I&rsquo;ve included a subclass of <code>UITextView</code> to assist with this, although you may want to consider delving into <code>CoreText</code> aswell.</p>
+
+<p>The helper method <code>htmlDataContainsLinks</code> is used to detect hyperlinks and mitigate the performance hit when using <code>UITextView</code></p>
+
+<p>Check out the project on <a href="http://github.com/amleszk/htmpple">github.com/amleszk/htmpple</a></p>
+
+		
+		
+	</div>
+
+</article>
+
+<nav id="pagenavi">
+    
+    
+</nav>
+</div>
+	<footer id="footer" class="inner">&copy; 2015
+
+    amleszk
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/hyphenator.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>

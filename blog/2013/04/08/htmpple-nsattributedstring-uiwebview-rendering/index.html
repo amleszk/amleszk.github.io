@@ -1,0 +1,125 @@
+
+<!DOCTYPE HTML>
+<html lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<title>Fast HTML rendering without UIWebView  | Alistair Leszkiewicz</title>
+
+	<meta name="author" content="amleszk">
+
+<meta name="description" content="This project was created for amrc as a means of rendering HTML rich text content. The library is built on xml parser hpple. htmpple uses NSDictionary &hellip;"> <meta name="keywords" content="">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link href="/atom.xml" rel="alternate" title="Alistair Leszkiewicz" type="application/atom+xml">
+	<link rel="canonical" href="">
+	<link href="/favicon.png" rel="shortcut icon">
+	<link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+	<!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	
+</head>
+
+
+
+<body>
+	<header id="header" class="inner"><img src="/images/avatar.jpg">
+<h1><a href="/">Alistair Leszkiewicz</a></h1>
+<span class="tagline"></span>
+<nav id="main-nav"><ul>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="http://twitter.com/amleszk">Twitter</a></li>
+	<li><a href="http://instagram.com/amleszk">Instagram</a></li>	
+	<li><a href="/archives">Archives</a></li>
+</ul>
+</nav>
+<nav id="mobile-nav">
+	<div class="alignleft menu">
+		<a class="button">Menu</a>
+		<div class="container"><ul>
+	<li><a href="/portfolio">Portfolio</a></li>
+	<li><a href="http://twitter.com/amleszk">Twitter</a></li>
+	<li><a href="http://instagram.com/amleszk">Instagram</a></li>	
+	<li><a href="/archives">Archives</a></li>
+</ul>
+</div>
+	</div>
+</nav>
+
+
+</header>
+
+	<div id="content" class="inner"><article class="post">
+	<header>
+		<h2 class="title">Fast HTML Rendering Without UIWebView</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-04-08T22:14:00-04:00" pubdate data-updated="true">Apr 8<span>th</span>, 2013</time></div>
+	</header>
+	<div class="entry-content"><p>This project was created for <a href="https://itunes.apple.com/au/app/amrc-reddit-client/id572391252?mt=8">amrc</a> as a means of rendering HTML rich text content.</p>
+
+<p>The library is built on xml parser <a href="https://github.com/topfunky/hpple">hpple</a>. <code>htmpple</code> uses NSDictionary merging to produce an <code>NSAttributedString</code> that represents the given html. Only a subset of html tags are supported, they include those available to any rich text editor, layout such as <code>table</code> is too complex to render with just <code>NSAttributedString</code>.</p>
+
+<p>Rendering non-hyperlink content is a peice of cake in iOS 6 due to the support added to <code>[UILabel attributedString]</code> . If the HTML contains links there&rsquo;s a bit of additional hacking required. I&rsquo;ve included a subclass of <code>UITextView</code> to assist with this, although you may want to consider delving into <code>CoreText</code> aswell.</p>
+
+<p>The helper method <code>htmlDataContainsLinks</code> is used to detect hyperlinks and mitigate the performance hit when using <code>UITextView</code></p>
+
+<p>Check out the project on <a href="http://github.com/amleszk/htmpple">github.com/amleszk/htmpple</a></p>
+</div>
+	
+
+</article>
+
+	
+	<div class="share">
+		<ul>
+			<li>
+  <a href="https://twitter.com/intent/tweet?text=Fast HTML rendering without UIWebView by @amleszk&url=http://blog.amleszk.com/blog/2013/04/08/htmpple-nsattributedstring-uiwebview-rendering/" title="Share Fast HTML rendering without UIWebView on Twitter">
+    <img src="/images/social/twitter.png" />
+  </a>
+</li>
+
+			<li>
+  <a href="https://www.facebook.com/sharer.php?u=http://blog.amleszk.com/blog/2013/04/08/htmpple-nsattributedstring-uiwebview-rendering/" title="Share Fast HTML rendering without UIWebView on Facebook">
+    <img src="/images/social/facebook.png" />
+  </a>
+</li>
+
+			<li>
+  <a href="https://plus.google.com/share?url=http://blog.amleszk.com/blog/2013/04/08/htmpple-nsattributedstring-uiwebview-rendering/" title="Share Fast HTML rendering without UIWebView on Google Plus">
+    <img src="/images/social/google.png" />
+  </a>
+</li>
+
+		</ul>
+	</div>
+
+
+
+</div>
+	<footer id="footer" class="inner">&copy; 2015
+
+    amleszk
+
+</footer>
+	<script src="/javascripts/slash.js"></script>
+<script src="/javascripts/hyphenator.js"></script>
+
+
+
+
+
+
+
+</body>
+</html>
