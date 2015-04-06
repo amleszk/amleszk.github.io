@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: NSAttributedString | Alistair Leszkiewicz]]></title>
+  <link href="http://blog.amleszk.com/blog/categories/nsattributedstring/atom.xml" rel="self"/>
+  <link href="http://blog.amleszk.com/"/>
+  <updated>2015-04-03T05:58:31-04:00</updated>
+  <id>http://blog.amleszk.com/</id>
+  <author>
+    <name><![CDATA[amleszk]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Fast HTML rendering without UIWebView]]></title>
+    <link href="http://blog.amleszk.com/blog/2013/04/08/htmpple-nsattributedstring-uiwebview-rendering/"/>
+    <updated>2013-04-08T22:14:00-04:00</updated>
+    <id>http://blog.amleszk.com/blog/2013/04/08/htmpple-nsattributedstring-uiwebview-rendering</id>
+    <content type="html"><![CDATA[<p>This project was created for <a href="https://itunes.apple.com/au/app/amrc-reddit-client/id572391252?mt=8">amrc</a> as a means of rendering HTML rich text content.</p>
+
+<p>The library is built on xml parser <a href="https://github.com/topfunky/hpple">hpple</a>. <code>htmpple</code> uses NSDictionary merging to produce an <code>NSAttributedString</code> that represents the given html. Only a subset of html tags are supported, they include those available to any rich text editor, layout such as <code>table</code> is too complex to render with just <code>NSAttributedString</code>.</p>
+
+<p>Rendering non-hyperlink content is a peice of cake in iOS 6 due to the support added to <code>[UILabel attributedString]</code> . If the HTML contains links there&rsquo;s a bit of additional hacking required. I&rsquo;ve included a subclass of <code>UITextView</code> to assist with this, although you may want to consider delving into <code>CoreText</code> aswell.</p>
+
+<p>The helper method <code>htmlDataContainsLinks</code> is used to detect hyperlinks and mitigate the performance hit when using <code>UITextView</code></p>
+
+<p>Check out the project on <a href="http://github.com/amleszk/htmpple">github.com/amleszk/htmpple</a></p>
+]]></content>
+  </entry>
+  
+</feed>
