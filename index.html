@@ -7,7 +7,7 @@
 
 	<meta name="author" content="amleszk">
 
-<meta name="description" content="This the first &lsquo;Mobile forum&rsquo; event I&rsquo;ve seen in New york. Invite only and held at the facebook office at Astor place. The format &hellip;"> <meta name="keywords" content="">
+<meta name="description" content="This is a passcode UI component built using RXSwift and LiveFrost. I created this as a separate project to be able to test out the features quickly &hellip;"> <meta name="keywords" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -50,6 +50,76 @@
 </header>
 
 	<div id="content" class="inner">
+
+
+    <article class="post">
+	<header>
+		<h2 class="title">
+			
+			<a href="/blog/2016/04/18/rxpasscode/">
+			
+				RxPasscode</a>
+		</h2>
+		<div class="meta date">
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2016-04-18T22:36:00-04:00" pubdate data-updated="true">Apr 18<span>th</span>, 2016</time></div>
+	</header>
+	<div class="entry-content">
+		<p>This is a passcode UI component built using <code>RXSwift</code> and <code>LiveFrost</code>. I created this as a separate project to be able to test out the features quickly, for later integration into my app <a href="https://itunes.apple.com/us/app/antenna-client-for-reddit/id572391252?mt=8">Antenna</a>. This blog post outlines some of the design decisions and gotcha&rsquo;s encountered</p>
+
+<p><a href="https://github.com/amleszk/RxPasscode">https://github.com/amleszk/RxPasscode</a></p>
+
+<p><img src="http://i.imgur.com/gQ1O2XB.png" alt="Imgur" /></p>
+
+<h3>Initail impressions on RxSwift</h3>
+
+<p>This is my first project to utilize <code>RxSwift</code>, so its usage of observables and streams is not very advanced. It takes a decent amount of thought to connect the streams in meaningfu ways. I&rsquo;ve learned the most from just looking at how other projects implement their observables. (I&rsquo;ll post a few links below) The key learning I wanted to share was that React has entry and exit points. One of the simplest entry points is the <code>Variable()</code>, this is a basic monad that wraps any peice of data. Once an object is an observable it becomes able to be manipulated easily.</p>
+
+<p>To exit React world, you can use: <code>.subscribeNext { ..some code.. }</code>. But you want to avoid using this call, and instead use a Binding. Keeping the data is the react world means your code will be much more re-usable.</p>
+
+<ul>
+<li><strong>Tutorial:</strong> <a href="http://www.schibsted.pl/2016/03/search-in-frp/">http://www.schibsted.pl/2016/03/search-in-frp/</a> This is one of the best FRP tutorials I&rsquo;ve found. The features are non-trivial and usage of react library is great. Watch the youtube videos also</li>
+<li><strong>Community:</strong> <a href="http://community.rxswift.org/">http://community.rxswift.org/</a> &ndash; A list of helper libraries and examples. Again exploring others projects is my preferred way of learning, even though the designs of some components can be not the best</li>
+<li><strong>Official project</strong> <a href="https://github.com/ReactiveX/RxSwift">https://github.com/ReactiveX/RxSwift</a> This contains a few playground files which are worth checking out</li>
+<li><strong>Eidolon</strong> <a href="https://github.com/artsy/eidolon">https://github.com/artsy/eidolon</a> Complex project written in FRP, the dev&rsquo;s were learning FRP as they worte it, so don&rsquo;t assume they used best practices.</li>
+</ul>
+
+
+<h3>The pain of using Swift and Objective C</h3>
+
+<p>Since I need this project to work with Objective C some of the code needed to change to be compatible. One such example is shared instance creation. I followed a blog post (<a href="https://thatthinginswift.com/singletons/">https://thatthinginswift.com/singletons/</a>) which says the best way to create a shared instance is <code>class SomeManager { static let sharedInstance = SomeManager() }</code>. This is not compatible with Objective C code. Instead you need to do more work:</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>internal let passcodePresenterSharedInstance = PasscodePresenter()
+</span><span class='line'>class PasscodePresenter: NSObject {
+</span><span class='line'>    class var sharedInstance: PasscodePresenter {
+</span><span class='line'>        return passcodePresenterSharedInstance
+</span><span class='line'>    }
+</span><span class='line'>}</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Also remember to always inherit from <code>NSObject</code> otherwise your classes will not be visible in Objective C. This brought me to the realization that using swift and objective C side-by-side will make your life <strong>so much more complicated</strong>. Consider dropping all objective C code somehow. Having seen projects of pure swift, and swift+objective-c, I would estimate that the compatibility makes the development time take 2-3 times longer, then having a pure swift project. IF you have plans to move to swift, kill and/or quarantine your objective-c code, make it part of your plan.</p>
+
+		
+		
+	</div>
+
+</article>
 
 
     <article class="post">
@@ -589,7 +659,7 @@ In March of this year I made the decision to quit my job and take the plunge. I 
 
 
 </div>
-	<footer id="footer" class="inner">&copy; 2015
+	<footer id="footer" class="inner">&copy; 2016
 
     amleszk
 
