@@ -1,0 +1,53 @@
+<script src="https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    mermaid.initialize({
+      startOnLoad: false,
+      theme: window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'neutral'
+    });
+    mermaid.run({ querySelector: '.language-mermaid' });
+  });
+</script>
+
+<style>
+  .language-mermaid {
+    background: none !important;
+  }
+  pre:has(.language-mermaid) {
+    background: none !important;
+    border: none !important;
+  }
+  .language-mermaid .cluster rect {
+    fill: #e8e8e8 !important;
+    stroke: #999 !important;
+  }
+  @media (prefers-color-scheme: dark) {
+    .language-mermaid .cluster rect {
+      fill: #333 !important;
+      stroke: #666 !important;
+    }
+  }
+  .site-header .wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .site-header .site-nav {
+    margin-left: auto;
+  }
+  .header-social-links {
+    display: flex;
+    gap: 12px;
+    margin-left: 16px;
+    align-items: center;
+  }
+  .header-social-links a {
+    color: inherit;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  .header-social-links a:hover {
+    opacity: 1;
+    text-decoration: none;
+  }
+</style>

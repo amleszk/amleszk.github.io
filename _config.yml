@@ -1,0 +1,23 @@
+theme: minima
+
+title: Alistair Leszkiewicz
+author:
+  name: amleszk
+
+description: >-
+  Staff iOS Developer at Grubhub, based in upstate New York.
+
+minima:
+  skin: auto
+  show_excerpts: true
+  social_links:
+    - title: GitHub
+      icon: github
+      url: "https://github.com/amleszk"
+    - title: LinkedIn
+      icon: linkedin
+      url: "https://www.linkedin.com/in/alistair-l-86aab6119"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
